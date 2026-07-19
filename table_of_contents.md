@@ -128,6 +128,7 @@ Questions
 20) Explain garbage collection.
 
 Browser APIs
+
 1) DOM
 2) BOM
 3) Fetch
