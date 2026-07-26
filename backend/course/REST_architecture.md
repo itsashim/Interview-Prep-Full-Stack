@@ -33,7 +33,7 @@ PATCH /tours/:id (client is supposed to send only the part of the object that ha
 Json is very light data interchange format used by any programming language.
 widely used because its readable. It's very typtical for the value to be string
 
-## Jsend, JSON:API, Odata json protocol are the standards
+## Jsend, JSON:API, Odata json protocol are the formatting standards
 
 ## Enveloping
 wraping the data into additional object is enveloping  
