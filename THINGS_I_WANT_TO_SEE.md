@@ -2,3 +2,9 @@
 - Docker
 - Mail SMTP
 - RBAC
+- Create callback function
+- Async and wait / Promises
+- try / catch
+- zod
+- test
+- typescript
