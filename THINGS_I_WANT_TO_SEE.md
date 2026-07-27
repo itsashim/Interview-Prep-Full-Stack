@@ -8,3 +8,4 @@
 - zod
 - test
 - typescript
+- find vs filter
