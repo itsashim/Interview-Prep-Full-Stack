@@ -20,6 +20,10 @@ To understand the node architecture , first we have to understand
 It is provided by libuv which give us four new threads that are completely seperate from the single thread , we can configure upto 128 threads. So these threads together form thread pool , 
 Event loop automatically offloads heavy task to thread pool.
 
+increase or changed the threads
+
+process.env.UV_THREADPOOL_SIZE = 4;
+
 # offloading
 heavy tasks like: 
 -file system api
@@ -36,6 +40,9 @@ can block the single thread in node js Event loop. so in order to prevent blocki
     - Events are emitted
     - Event loop picks them up
     - callbacks are called
+It is called observer pattern, where instead of calling a function the we observe if any events are emmited to handle them,
+ 
+node js has event emitter objects -> we developer handle those events by event listener -> and we attach a callback function
 
 # The things that emit events
 - new http request
