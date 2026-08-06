@@ -20,3 +20,36 @@ Mongoose is an Object Document Mapper (ODM). It sits between Express app and Mon
  - It where we model our data, where we describe the model of the data, default values and validations, 
  and create a model out of it, Model is a wrapper around schema which provides  interface to the database for CRUD operations. 
 
+ There are schema type options where we can add validations for specific key; for eg
+
+# step 1
+ const tourSchema = new mongoose.Schema({
+       name: {
+              type: String;
+              required: true
+       }, 
+       rating: {
+              type: Number;
+              required: true
+       }
+ })
+
+# step 2
+const Tour = mongoose.model('Tour', tourSchema);
+
+- Just like we create ojbect our of class (just for analogy)
+
+# step 3
+const newTour = new Tour({
+       name: 'Hello',
+       raging: 4.0,
+})
+
+# Step 4
+newTour.save(); // saves this data in database and it returns promise so we can handle that promise
+
+newTour.save().then().catch();
+
+
+
+create Schema -> create Model -> create Data with that model -> save()
