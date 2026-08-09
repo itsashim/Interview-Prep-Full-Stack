@@ -14,6 +14,9 @@ if we build SSR, templates to generate a view , presentation logic
 - easy to maintain and scale
 
 ```mermaid
+\
+
+
 flowchart LR
     A[Client Request] --> B[Router]
 
